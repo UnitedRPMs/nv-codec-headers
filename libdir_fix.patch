@@ -1,0 +1,20 @@
+--- a/Makefile	2018-04-15 10:19:01.000000000 -0600
++++ b/Makefile-1	2018-04-20 19:56:54.967111035 -0600
+@@ -1,6 +1,15 @@
+-PREFIX = /usr/local
+-LIBDIR = lib
++PREFIX = /usr
+ INSTALL = install
++
++MACHINE := $(shell uname -m)
++
++ifeq ($(MACHINE), x86_64)
++LIBDIR = lib64
++endif
++ifeq ($(MACHINE), i686)
++LIBDIR = lib
++endif
++
+ SED = sed
+ 
+ all:
