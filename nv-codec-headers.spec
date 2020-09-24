@@ -1,5 +1,5 @@
 Name:           nv-codec-headers
-Version:        9.1.23.1
+Version:        10.0.26.0
 Release:        7%{?dist}
 Summary:        FFmpeg version of Nvidia Codec SDK headers
 License:        MIT
@@ -30,6 +30,9 @@ make PREFIX=%{_prefix}
 
 
 %changelog
+
+* Mon Sep 21 2020 David Va <davidva at tuta dot io> 10.0.26.0-7
+- Updated to 10.0.26.0
 
 * Fri Dec 13 2019 David Va <davidva at tuta dot io> 9.1.23.1-7
 - Updated to 9.1.23.1
